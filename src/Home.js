@@ -1,12 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
 
- class Home extends Component {
-    render() {
-        return (
-            <div>
-                <h1>this is Home Componen</h1>
-            </div>
-        )
-    }
+class Home extends Component {
+  componentWillUnmount() {
+    console.log("this component is removed from the dom ");
+  }
+  render() {
+    return (
+      <div>
+        <h1>this is Home Component</h1>
+      </div>
+    );
+  }
 }
-export default Home
+export default Home;
